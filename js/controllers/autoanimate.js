@@ -360,7 +360,7 @@ export default class AutoAnimate {
 				bounds = elementOptions.measure( element );
 			}
 			else {
-				if( config.center ) {
+				if( config.center || true ) {
 					// More precise, but breaks when used in combination
 					// with zoom for scaling the deck ¯\_(ツ)_/¯
 					bounds = element.getBoundingClientRect();
