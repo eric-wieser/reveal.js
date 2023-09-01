@@ -182,6 +182,7 @@ export default class AutoAnimate {
 
 			// Don't auto-animate the opacity of fragments to avoid
 			// conflicts with fragment animations
+			delete fromProps.styles['opacity'];
 			delete toProps.styles['opacity'];
 
 			if( from.classList.contains( 'fragment' ) ) {
